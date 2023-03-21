@@ -1,20 +1,16 @@
-a {
-  text-decoration: none;
-}
-header {
-  background-color: grey;
-}
-.logo {
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: black;
-  &--white {
-    color: white;
-  }
-  &__accent {
-    color: #2196f3;
-  }
-}
+@import './utils/vars';
+@import './utils/globals';
+@import './components/address';
+@import './components/buttons';
+@import './components/card';
+@import './components/contact';
+@import './components/footer';
+@import './components/form';
+@import './components/grid';
+@import './components/hero';
+@import './components/logo';
+@import './components/modal';
+@import './components/nav';
+@import './components/page-header';
+@import './components/section';
+@import './components/socials';
