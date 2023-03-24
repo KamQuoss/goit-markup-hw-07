@@ -11,12 +11,13 @@ $color-white: #ffffff;
 $color-error: #f2413a;
 $color-white-opacity: rgba(255, 255, 255, 0.6);
 
-$gutter: 30px;
+$grid-gutter: 30px;
+$border-radius: 4px;
 
 
 @mixin transition($properties...) {
     transition-property: $properties;
-    transition-duration: 2500ms;
+    transition-duration: 250ms;
     transition-timing-function: cubic-bezier(.4, 0, .2, 1);
 }
 

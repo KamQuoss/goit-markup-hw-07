@@ -5,17 +5,22 @@
   min-width: 200px;
   padding: 10px;
   color: $color-white;
-  font-weight: 700;
-  font-size: 16px;
-  letter-spacing: 0.06rem;
-  line-height: 1.88;
   background-color: $color-primary;
   border: none;
-  border-radius: 4px;
+  border-radius: $border-radius;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   @include transition(background-color, color, box-shadow);
+  &__label {
+    display: inline-flex;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.06rem;
+    line-height: 1.88;
+  }
   &__icon {
     display: inline-flex;
+    width: 24px;
+    height: 24px;
     &--start {
       margin-right: 24px;
     }

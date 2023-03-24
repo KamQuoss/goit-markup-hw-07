@@ -1,20 +1,12 @@
-@mixin grid($columns, $gutter) {
+.grid {
   display: flex;
-  gap: $gutter;
+  gap: $grid-gutter;
   flex-wrap: wrap;
-  &__item {
-    flex-basis: calc((100% - ($columns - 1) * $gutter) / $columns);
+  &__column {
+    @each $column in 3, 4, 6 {
+      &--#{$column} {
+        flex-basis: calc((100% - ($column - 1) * $grid-gutter) / $column);
+      }
+    }
   }
-}
-
-// tu możesz dać funkcję, która utworzy różne wielkości
-
-.grid-3 {
-  @include grid(3, $gutter);
-}
-.grid-4 {
-  @include grid(4, $gutter);
-}
-.grid-6 {
-  @include grid(6, $gutter);
 }
